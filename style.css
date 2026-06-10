@@ -7,7 +7,17 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
+background:
+linear-gradient(
+rgba(15,23,42,0.8),
+rgba(15,23,42,0.8)
+),
+url('assets/background.jpg');
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
 color:white;
 }
 
