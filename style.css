@@ -77,8 +77,8 @@ cursor:pointer;
 }
 
 .hero-image img{
-width:600px;
-height:300px;
+width:320px;
+height:320px;
 object-fit:cover;
 border-radius:50%;
 border:5px solid #60a5fa;
