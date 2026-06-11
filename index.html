@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Muh Arwin - Mahasiswa Teknik Informatika 
-    yang fokus pada Artificial Intelligence, Machine Learning, dan Pengolahan Citra Digital">
+    <meta name="description" content="Portfolio Muh Arwin - Mahasiswa Teknik Informatika yang fokus pada Artificial Intelligence, Machine Learning, dan Pengolahan Citra Digital">
     
     <title>Muh Arwin | Portfolio</title>
     
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -23,65 +21,77 @@
             <li><a href="#contact">Kontak</a></li>
         </ul>
     </nav>
+
     <section class="hero">
-    <div class="hero-text">
+        <div class="hero-text">
+            <h1>Halo, Saya <span>Muh Arwin</span></h1>
+            <h2 class="typing-container"><span id="typing"></span><span class="cursor">|</span></h2>
 
-    <h1>Halo, Saya <span>Muh Arwin</span></h1>
-    <h2 id="typing"></h2>
+            <p>
+                Mahasiswa Teknik Informatika yang fokus pada Artificial Intelligence, Machine Learning, 
+                Pengolahan Citra Digital, dan Cyber Security. Aktif membangun solusi cerdas berbasis data.
+            </p>
 
-    <p>
-    Mahasiswa Teknik Informatika yang fokus pada
-    Artificial Intelligence, Machine Learning,
-    Pengolahan Citra Digital, dan Cyber Security.
-    </p>
+            <a href="assets/cv.pdf" download>
+                <button class="btn-primary"><i class="fas fa-download"></i> Download CV</button>
+            </a>
+        </div>
 
-    <a href="assets/cv.pdf" download>
-        <button>Download CV</button>
-    </a>
-    </div>
-
-    <div class="hero-image">
-
-        <img src="assets/profile.jpg">
-
-    </div>
-
+        <div class="hero-image">
+            <img src="assets/foto.jpeg" alt="Foto Profil Muh Arwin">
+        </div>
     </section>
 
     <section id="about">
         <h2>Tentang Saya</h2>
-
-        <p>
-        Saya adalah mahasiswa Teknik Informatika yang memiliki
-        ketertarikan pada pengembangan Artificial Intelligence,
-        Machine Learning, Deep Learning, serta Pengolahan Citra Digital.
-        Saya aktif mengembangkan proyek berbasis MATLAB,
-        Python, dan teknologi web modern. </p>
-
+        <div class="about-content">
+            <p>
+                Saya adalah mahasiswa Teknik Informatika yang memiliki ketertarikan mendalam pada pengembangan 
+                <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, <strong>Deep Learning</strong>, 
+                serta <strong>Pengolahan Citra Digital</strong>. Saya aktif mengembangkan proyek berbasis MATLAB, 
+                Python, dan integrasi teknologi web modern untuk menyajikan visualisasi data yang interaktif.
+            </p>
+        </div>
     </section>
 
     <section id="skills">
         <h2>Keahlian</h2>
+        
         <div class="skill">
-            <p>MATLAB</p>
-                <div class="bar">
+            <div class="skill-info">
+                <span>MATLAB</span>
+                <span>95%</span>
+            </div>
+            <div class="bar">
                 <div style="width:95%"></div>
             </div>
         </div>
+
         <div class="skill">
-            <p>Machine Learning</p>
-                <div class="bar">
+            <div class="skill-info">
+                <span>Machine Learning & Deep Learning</span>
+                <span>90%</span>
+            </div>
+            <div class="bar">
                 <div style="width:90%"></div>
             </div>
         </div>
+
         <div class="skill">
-            <p>HTML & CSS</p>
+            <div class="skill-info">
+                <span>Python (Data Science Stack)</span>
+                <span>85%</span>
+            </div>
             <div class="bar">
                 <div style="width:85%"></div>
             </div>
         </div>
+
         <div class="skill">
-            <p>Python</p>
+            <div class="skill-info">
+                <span>HTML, CSS & Web Tech</span>
+                <span>80%</span>
+            </div>
             <div class="bar">
                 <div style="width:80%"></div>
             </div>
@@ -91,54 +101,71 @@
     <section id="projects">
         <h2>Project Saya</h2>
         <div class="cards">
+            
             <div class="card"> 
+                <div class="card-icon"><i class="portfolio-icon fas fa-folder-open"></i></div>
                 <h3>Klasifikasi Daun Herbal</h3>
-                <p>
-                    Implementasi JST Backpropagation menggunakan MATLAB.
-                </p>
-
+                <p>Implementasi JST Backpropagation menggunakan MATLAB untuk mengenali jenis daun tanaman obat secara otomatis.</p>
+                <div class="card-links">
+                    <a href="https://github.com/muharwin" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                </div>
             </div>
+
             <div class="card">
+                <div class="card-icon"><i class="portfolio-icon fas fa-heartbeat"></i></div>
                 <h3>Klasifikasi Penyakit Jantung</h3>
-                <p>
-                    Prediksi penyakit jantung menggunakan Artificial Neural Network.
-                </p>
+                <p>Prediksi potensi risiko penyakit jantung pasien menggunakan arsitektur Artificial Neural Network (ANN).</p>
+                <div class="card-links">
+                    <a href="https://github.com/muharwin" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Deteksi DDoS</h3>
-                <p>
-                    Deteksi serangan jaringan menggunakan Deep Learning.
-                </p>
-            </div>
-        </div>
 
+            <div class="card">
+                <div class="card-icon"><i class="portfolio-icon fas fa-shield-alt"></i></div>
+                <h3>Deteksi DDoS</h3>
+                <p>Sistem keamanan jaringan untuk mendeteksi anomali serangan DDoS berbasis algoritma Deep Learning.</p>
+                <div class="card-links">
+                    <a href="https://github.com/muharwin" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+
+        </div>
     </section>
+
     <section id="contact">
         <h2>Hubungi Saya</h2>
-        <form>
-            <input type="text" placeholder="Nama">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Pesan"></textarea>
-            <button>Kirim</button>
-        </form>
-        <div class="social">
-            <a href="https://wa.me/6285298904650" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://facebook.com/Mhmmd Arwin" target="_blank">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://instagram.com/muharwinmo" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
+        <div class="contact-container">
+            <form action="#" method="POST">
+                <input type="text" placeholder="Nama Lengkap" required>
+                <input type="email" placeholder="Alamat Email" required>
+                <textarea placeholder="Tulis pesan Anda di sini..." rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+            
+            <div class="social">
+                <p>Atau hubungi saya melalui platform berikut:</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/6285298904650" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/muharwin" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/muharwinmo" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p> 
-            © 2026 Muh Arwin Portfolio
-        </p>
+        <p>© 2026 Muh Arwin Portfolio. Built with ❤️ using HTML, CSS, & JS.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
